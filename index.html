@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigvey.ru</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="img">
+              <img src="Медиа/img/logo.svg" width="100px" height="50px">
+          </div>
+          <a class="navbar-brand" href="#Main">My-Giro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link disable">Телефон: 88005553535</a>
+              <a class="nav-link active" aria-current="page" href="#">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section name="Slider" class="section"><a name="Slider"></a>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Медиа/img/minipro.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Более 100 моделей
+                    гироскутеров в в нашем
+                    магазине</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Медиа/img/minirobot-mini-36v.png" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Магазин в центре города</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Медиа/img/-detskij-giroskuter-1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Бесплатная доставка
+                    по городу и области</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Медиа/img/-detskij-giroskuter-1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Собственный
+                    Сервисный центр</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section name="Propertes" class="section">
+        <h2>Особенности</h2><a name="Main"></a>
+        <div class="row justify-content-between container-fluid">
+            <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/samobalans-app.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Гироскутер</h5>
+                  <p class="card-text">Стильный внешний вид и небольшие размеры привлекают внимание.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/kugoo-jilong.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Электросамокат</h5>
+                  <p class="card-text">Один из наиболее популярных видов передвижения. К его несомненным достоинствам относятся высокая скорость, хорошая проходимость, простота управления, практичность.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/sigvej-smart-balance-a8-kosmos-sinij.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Сигвей</h5>
+                  <p class="card-text">Руль модели обеспечивает легкость управления, большой радиус колес – высокую проходимость устройства.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section name="Goods" class="section">
+        <p  class="p b">Фильтр:</p>
+        Все<input type="radio" id="Allrb" name="categories" value="1" onclick="filter1()" checked><br>
+        Гироскутеры<input type="radio" id="Гироскутерыrb" name="categories" value="2" onclick="filter2()"><br>
+        Электровелосипеды<input type="radio" id="Электровелосипедыrb" name="categories" value="3" onclick="filter3()"><br>
+        Сигвеи<input type="radio" id="Сигвеиrb" name="categories" value="4" onclick="filter4()">
+        <p class="h2 b">Список товаров</p>
+        <div class="container">
+            <div class="row justify-content-between container-fluid" id="Гироскутеры">
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/samobalans-app.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Гироскутер Mizar 11 Galaxy, 10" (MZ11GX)</h5>
+                      <p class="card-text p">15 000р.</p>
+                      <p class="card-text p">Вид: Гироскутер</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/GT.jfif" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Гироскутер HIPER Mini S4, 6,5 дюймов</h5>
+                      <p class="card-text p">15 000р.</p>
+                      <p class="card-text p">Вид: Гироскутер</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/giroskuter-xv.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Гироскутер Besshof AJ-PY6-1 Gold</h5>
+                      <p class="card-text p">20 000р.</p>
+                      <p class="card-text p">Вид: Гироскутер</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row justify-content-between container-fluid" id="Электровелосипеды">
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/wo-long.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Электровелосипед Колхозник V 2.0 2021</h5>
+                      <p class="card-text p">20 000р.</p>
+                      <p class="card-text p">Вид: Электровелосипед</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Медиа/img/elliprun.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title b">Электровелосипед Rockwild G1 PRO</h5>
+                    <p class="card-text p">25 000р.</p>
+                    <p class="card-text p">Вид: Электровелосипед</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/ultron.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Электровелосипед Big G1 2021 Желтый</h5>
+                      <p class="card-text p">22 250р.</p>
+                      <p class="card-text p">Вид: Электровелосипед</p>
+                    </div>
+                </div>
+              </div><br>
+              <div class="row justify-content-between container-fluid" id="Сигвеи">
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/sigvej-smart-balance-a8-raznocvetnyj-ogon.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Сигвей Smart Balance A8 Красная молния</h5>
+                      <p class="card-text p">30 000р.</p>
+                      <p class="card-text p">Сигвей</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="Медиа/img/sigvej-smart-balance-a8-kosmos.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title b">Сигвей Smart Balance A8 Граффити Оранжевый</h5>
+                      <p class="card-text p">35 000р.</p>
+                      <p class="card-text p">Сигвей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="section" name="Consultant">
+        <h2 class="b">О консультантах</h2>
+        <img src="Медиа/img/04.jpg" class="img-top" width="100%" height="500px">
+        <p class="h3">Наши консультанты помогут подобрать для вас вид транспорта который вы хотите по приемлимой для вас цене.</p>
+        <hr>
+    </section>
+    <section class="section" name="Brends">
+        <h2 class="b">Бренды</h2>
+        <div class="container">
+          <div class="row justify-content-between container-fluid">
+              <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/falcon.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title b">Falcon</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/minirobot-mini-36v.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title b">Ninebot mini pro</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="Медиа/img/GT.jfif" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title b">iBalance</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      <hr>
+    </section>
+    <section class="section" name="Information">
+        <h2 class="b">Полезная информация</h2>
+        <img src="Медиа/img/sigvej-smart-balance-a8-kosmos-sinij.jpg" align="left" width="290px" height="300px" style="margin-right: 20px;">
+        <p class="h4 b">Сигвей - транспорт нового поколения</p>
+        <p class="h5 p">Спросив своего ребенка, что бы он хотел получить в подарок на день рождения - самокат или велосипед, вы можете удивиться ответу. Потому что услышите совсем другое, возможно даже незнакомое вам слово - сигвей. И, прежде чем отказать своему малышу или показать ему, что вы несведущи в этом вопросе, "не в тренде", прочитайте эту статью и узнайте, почему сигвей - мечта каждого ребенка.</p>
+        <p class="h4 b">Что такое сигвей?</p>
+        <p class="h5 p">Это современное двухколёсное транспортное средство, пользующееся популярностью и растущим спросом. Это своего рода модифицированный самокат, представленный разнообразными моделями, как для взрослых, так и для детей.</p>
+        <p class="h4 b">Чем отличается сигвей?</p>
+        <p class="h5 p">Чем отличается сигвей от других видов двухколесной техники?Во-первых, по сравнению с тем же гироскутером, он оборудован специальной ручкой, благодаря которой управлять транспортным средством очень легко и удобно. Именно возможность "порулить" делает сигвей таким привлекательным в глазах большинства детей. Другой особенностью сигвея является большая мощность двигателя, а значит, и более высокая развиваемая скорость.</p>
+        <img src="Медиа/img/stat_ya.jpg" align="left" width="350px" height="225px" style="margin-right: 20px;">
+        <p class="h4 b">Где купить сигвей?</p>
+        <p class="h5 p">Решили порадовать своего ребенка желанным подарком и не знаете, где можно купить сигвей? Рынок сегодня изобилует разнообразными моделями этого электротранспорта. Но большая часть все же представлена в интернет-магазинах, где вы можете найти и купить своему ребенку самый лучший сигвей в его жизни.
+        <p class="h4 b">Как выбрать лучший сигвей для ребенка?
+        <p class="h5 p">А какой он, спросите вы, лучший сигвей для ребенка? По каким параметрам и техническим характеристикам следует делать выбор? Учитывайте, в первую очередь, возраст вашего ребенка и навыки его катания.
+        Если ваш малыш ещё совсем мал, и это первый сигвей в его жизни, то стоит присмотреться к самой простой модели, такой как Mini Robot mini. Этот компактный сигвей весом 12,8 кг предназначен для самых маленьких райдеров. Его мощность позволяет развивать скорость до 16 км/ч, а время зарядки составляет 2-3 часа.
+        <img src="Медиа/img/6043756464.jpg" width="350px" height="225px" align="left" style="margin-right: 20px;">Ребенку постарше можно выбрать более профессиональную модель сигвея с улучшенными техническими характеристиками и возможностями управления. Mini Robot Pro станет отличным вариантом. Отличительная особенность данной модели - возможность управления со смартфона.
+        При выборе подходящей модели сигвея вы можете проконсультироваться со специалистами, либо с вашим непосредственным заказчиком, то есть вашим ребенком. Возможно, он уже давно "в теме" и знает, какой конкретно сигвей ему нужен.</p>
+        <p class="h4 b">Какой электросамокат лучше купить подростку?</p>
+        <p class="h5 p">Многие родители задаются вопросом:  какой электросамокат лучше купить подростку? – многое зависит от бюджета. Транспортные средства из этой серии пользуются огромной популярностью, они быстрые и бесшумные, дают возможность преодолевать большие расстояния.</p>
+        <p class="h4 b">Рекомендации по выбору электросамоката для подростка</p>
+        <p class="h5 p">Прежде чем купить новый электросамокат в Москве, нужно определиться с основными критериями выбора. В этот список смело можно включить:</p>
+        <ul>
+            <li><p class="h5 p">Мощность двигателя;</p></li>
+            <li><p class="h5 p">Ёмкость аккумулятора;</p></li>
+            <li><p class="h5 p">Вес.</p></li>
+        </ul>
+        <p class="h5 p">Езда на электросамокате на большой скорости невозможна без хорошей координации. «Водитель» должен быть предельно внимательным. Подростки отрабатывают стиль вождения, поэтому им желательно выбирать в меру мощные транспортные средства, которыми несложно управлять. Такие самокаты представляют собой удобные средства передвижения.
+        Принимая во внимание популярность электросамокатов, производителями предлагаются десятки разнообразных конструкций. Чтобы выбор был правильным, необходимо проанализировать технические характеристики представленных в продаже моделей.</p>
+        <p class="h4 b">Недорогие гироскутеры с ручкой</p>
+        <img src="Медиа/img/GT.jfif" width="350px" height="225px" align="left" style="margin-right: 20px;">
+        <p class="h4 b">Устройство гироскутера и советы по выбору</p>
+        <p class="h5 p">Для движения гироскутера используются электродвигатели, питаемые от аккумулятора, а для балансировки гироскопические датчики. При переносе центра тяжести вперед, транспорт движется в прямом направлении. Чтобы двигаться в обратном направлении, нужно надавить пятками назад. Для поворота направо или налево нужно соответствующей ногой нажать вперед.
+        Какой гироскутер купить ребенку? Яркие технические новинки мало кого оставляют равнодушными. Буйство красок в дизайне и растущая популярность очень сильно привлекает ребенка. В выборе гироскутера для детей существует множество нюансов, таких как:</p>
+        <ul>
+            <li><p class="h5 p">Возраст ребенка;</p></li>
+            <li><p class="h5 p">Финансовая составляющая;</p></li>
+            <li><p class="h5 p">Особенность дорожного покрытия;</p></li>
+        </ul>
+        <p class="h4 b">Желание обладать дополнительными функциями транспорта.</p>
+        <p class="h5 p">Прежде всего необходимо обратить внимание на техническую составляющую устройства. Размер колес напрямую влияет на грузоподъемность, проходимость и скорость гироскутера. Размеры колес измеряются в дюймах. Существуют:</p>
+        <ul>
+            <li><p class="h5 p">4,5-дюймовые. Созданы для гладкой поверхности, транспортное средство с такими колесами имеет низкую проходимость и развивает скорость 5-7 км/ч;</p></li>
+            <li><p class="h5 p">6,5-дюймовые. Такой агрегат отлично подходит для начинающих пользователей. Скоростной режим устройства с такими колесами — 10 км/ч;</p></li>
+            <li><p class="h5 p">8-дюймовые. Проходимость данных колес существенно выше, чем у предыдущих. Скоростной режим также составляет 10 км/ч;</p></li>
+            <li><p class="h5 p">10-дюймовые. Такие колеса отличаются хорошей амортизацией, развивают скорость до 15 км/ч.</p></li>
+        </ul>
+        <p class="h5 p">Для детей младшего возраста подойдут колеса небольшого размера, так как развивают небольшую скорость. Масса тела начинающего пользователя должна быть не меньше 20 килограммов. При массе тела ниже указанной, гироскутер не почувствует вес.
+        Мощность агрегата влияет на его проходимость. Для детей помладше подойдут модели с мощностью 500 ватт (2х250), подросткам с мощностью 700 ватт (2х350).
+        Аккумулятор предназначен для непосредственной работы прибора. Емкость аккумулятора обычно составляет 4,4 ампер-час. Стоит помнить, что работа в холодное время года невозможна.
+        В электронике гироскутера присутствуют три материнские платы: контроль всего устройства и колес. Материал корпуса представлен полистиролом. Необходимо всегда запрашивать сертификаты качества устройства.
+        Сегвей или гироскутер?</p>
+        <hr>
+    </section>
+    <section class="section" name="CompanyInfo">
+        <h2 class="b">Информация о компании</h2>
+        <p class="h5 p">Электротранспорт - купить по выгодной цене с доставкой по Москве</p>
+        <p class="h4 b">Мы рады видеть Вас на нашем сайте!</p>
+        <p class="h5 p">Сайт Sigvey.ru поможет Вам разобраться и рассмотреть все варианты Электротранспорта. После прочтения информации о том или ином транспорте, Вы с легкостью сможете остановиться на нужной для Вас модели и в кратчайшие сроки получить заказ домой или в офис. На нашем сайте Вы найдете Гироскутеры, Segway, Электровелосипеды, Электросамокаты, Сигвеи, а также любые по цветовой гамме Моноколеса, Самокаты и Гироциклы.</p>
+        <p class="h5 p">Личный электрический транспорт, который недавно казался роскошью и недоступной экзотикой, теперь всё плотнее входит в повседневную жизнь. Ежедневно в продаже появляются новые разновидности и модели. Магазин электротранспорта – хорошая возможность выбрать товар с подходящими характеристиками.</p>
+        <p class="h4 b">Достоинства</p>
+        <ul>
+            <li><p class="h5 p">разнообразие;</p></li>
+            <li><p class="h5 p">экологическая безопасность;</p></li>
+            <li><p class="h5 p">недорогое техническое обслуживание;</p></li>
+            <li><p class="h5 p">практичность;</p></li>
+            <li><p class="h5 p">надежность;</p></li>
+            <li><p class="h5 p">функциональность.</p></li>
+        </ul>
+        <p class="h5 p">Множество магазинов продает разнообразную электрическую технику через интернет. На сайте представлен каталог товаров с подробным описанием и техническими характеристиками. Удобная навигация можно выбрать транспортное средство, оценить внешний вид, ознакомиться с техническими характеристиками.</p>
+        <p class="h5 p">В наличии в Москве большой выбор моделей от известных производителей. Онлайн-консультант ответит на любые вопросы. Заказать товар можно круглосуточно.</p>
+        <p class="h4 b">Представлены все основные виды электротранспорта</p>
+        <ul>
+            <li><p class="h5 p">Электросамокат. Один из наиболее популярных видов передвижения. К его несомненным достоинствам относятся высокая скорость, хорошая проходимость, простота управления, практичность.</p></li>
+            <li><p class="h5 p">Гироскутер. Стильный внешний вид и небольшие размеры привлекают внимание.</p></li>
+            <li><p class="h5 p">Сигвей. Руль модели обеспечивает легкость управления, большой радиус колес – высокую проходимость устройства.</p></li>
+            <li><p class="h5 p">Электровелосипед. Подходит для города и бездорожья, удобный и практичный.</p></li>
+            <li><p class="h5 p">Моноколесо. Оригинальный девайс обладает изящным и стильным дизайном, небольшими размерами и весом.</p></li>
+            <li><p class="h5 p">Самокат. Классическая модель имеет ряд усовершенствований – стильный дизайн, подсветка, регулировка по росту.</p></li>
+            <li><p class="h5 p">Квадроцикл. Устойчивое четырехколесное устройство отличается проходимостью и грузоподъемностью.</p></li>
+            <li><p class="h5 p">Доставка электротранспорта занимает от 2 часов по Москве до 10 дней по всей России. Все товары сертифицированы, они проверяются перед отправкой. В случае отказа от покупки в течение 14 дней – стопроцентный возврат оплаты. Гарантия на изделия составляет 12 месяцев. К каждой покупке – подарок от магазина.</p></li>
+        </ul>
+        <p class="h4 b">Желаем Вам приятного просмотра.</p>
+        <hr>
+    </section>
+    <div class='follow'>
+        <a class="h3" href="#Slider">^Вверх^</a>
+    </div>
+    <section name="sign" class="section">
+        <h2 class="b">Подписка на рассылки</h2><a name="sign"></a>
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-5"> 
+                    <div class="input-group input-group-sm"> 
+                        <span class="input-group-addon">Имя -</span> 
+                        <input type="text" class="form-control">  
+                    </div> 
+                </div> 
+            </div>
+            <div class="row"> 
+                <div class="col-md-5"> 
+                    <div class="input-group input-group-sm"> 
+                        <span class="input-group-addon">E-mail -</span> 
+                        <input type="text" class="form-control">  
+                    </div> 
+                </div> 
+            </div>
+            <button type="submit" class="btn">Подписаться</button>
+        </div> 
+    </section>
+<script src="script.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script></body>
+</html>
